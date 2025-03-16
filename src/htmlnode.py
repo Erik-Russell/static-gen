@@ -11,12 +11,12 @@ class HTMLNode:
         string for value of HTML tag (e.g. text inside a p)
         """
 
-        self.children = children
+        self.children = children if children is not None else []
         """
         list of HTMLNode obj that are the children of this node
         """
 
-        self.props = props
+        self.props = props if props is not None else {}
         """
         Dictionary of key-value pairs representing the attributes of the HTML tag.
         For example, a link (<a> tag) might have {"href": "https://www.google.com"}
