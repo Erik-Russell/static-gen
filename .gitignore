@@ -4,3 +4,5 @@ src/__pycache__
 
 .idx/dev.nix
 .vscode/settings.json
+
+/venv
